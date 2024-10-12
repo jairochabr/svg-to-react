@@ -4,7 +4,7 @@
 
 Turn your SVGs into React components with a simple file rename! 🎨 → 🚀
 
-https://github.com/user-attachments/assets/f8fa37cf-452a-4560-a138-0d1ddc5add7a
+![Demo](./media/demo.gif)
 
 ## Features ✨
 

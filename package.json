@@ -11,6 +11,10 @@
   "engines": {
     "vscode": "^1.94.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jairochabr/svg-to-react.git"
+  },
   "categories": [
     "Other"
   ],
@@ -45,18 +49,3 @@
     "@vscode/test-electron": "^2.4.1"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
