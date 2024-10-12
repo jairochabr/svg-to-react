@@ -1,8 +1,13 @@
 {
   "name": "svg-to-react",
-  "displayName": "svg-to-react",
-  "description": "...",
+  "displayName": "Svg to React",
+  "description": "Automatically convert SVG files to React JS components when renamed",
   "version": "0.0.1",
+  "icon": "./media/svg-to-react.png",
+  "publisher": "jairochabr",
+  "author": {
+    "name": "Jairo Rocha"
+  },
   "engines": {
     "vscode": "^1.94.0"
   },
