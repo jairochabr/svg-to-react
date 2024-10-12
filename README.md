@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/f8fa37cf-452a-4560-a138-0d1ddc5add7a
 - 📝 Generates smart component names based on the file name
 - 🔧 Zero configuration required!
 
-## Como Usar 🛠️
+## How to Use 🛠️
 
 1. Locate the SVG file in your project
 2. Rename the file from `.svg` to `.jsx` or `.tsx`
