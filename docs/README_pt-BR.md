@@ -4,7 +4,7 @@
 
 Transforme seus SVGs em componentes React com um simples renomeio de arquivo! 🎨 → 🚀
 
-<!-- Video -->
+https://github.com/user-attachments/assets/f8fa37cf-452a-4560-a138-0d1ddc5add7a
 
 ## Características ✨
 
