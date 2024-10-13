@@ -6,8 +6,7 @@ Turn your SVGs into React components with a simple file rename! 🖼️ → 🧩
 
 ## Features ✨
 
-- 🔄 Automatic conversion from SVG to React (JSX/TSX)
-- 🎨 Maintains the original structure and style of the SVG
+- 🔄 Conversion from SVG to React (JSX/TSX)
 - 🚀 Support for JSX and TSX with auto-generated TypeScript definitions
 - 💅 Handles inline styles and CSS classes
 - 📝 Generates smart component names based on the file name
@@ -61,10 +60,9 @@ For TypeScript (`.tsx`), the component will include auto-typing!
 Encountered an issue? Try these quick tips:
 
 1. Ensure the SVG file is valid
-2. Check file permissions
-3. Restart VSCode and try again
-4. Verify you're in a React JS project
-5. Confirm you're using the correct file extension (JSX or TSX)
+2. Restart VSCode and try again
+3. Verify you're in a React JS project
+4. Confirm you're using the correct file extension (JSX or TSX)
 
 Still having trouble? Open an issue on our [GitHub repository](https://github.com/jairochabr/svg-to-react/issues). We're here to help!
 
