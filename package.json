@@ -1,12 +1,13 @@
 {
   "name": "svg-to-react",
   "displayName": "Svg to React",
-  "description": "Automatically convert SVG files to React JS components when renamed",
-  "version": "0.0.1",
+  "description": "Convert SVG files into React JS components with a simple file rename.",
+  "version": "0.0.2",
   "icon": "./media/svg-to-react.png",
   "publisher": "jairochabr",
   "author": {
-    "name": "Jairo Rocha"
+    "name": "Jairo Rocha",
+    "url": "https://www.linkedin.com/in/jairochabr/"
   },
   "engines": {
     "vscode": "^1.94.0"
@@ -15,8 +16,46 @@
     "type": "git",
     "url": "https://github.com/jairochabr/svg-to-react.git"
   },
+  "galleryBanner": {
+    "color": "#2C2C32",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/jairochabr/svg-to-react",
+  "sponsor": {
+    "url": "https://github.com/sponsors/jairochabr"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/jairochabr"
+    },
+    {
+      "type": "custom",
+      "url": "https://www.buymeacoffee.com/jairochabr"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/jairochabr/svg-to-react/issues"
+  },
   "categories": [
+    "Snippets",
+    "Formatters",
     "Other"
+  ],
+  "keywords": [
+    "svg",
+    "react",
+    "component",
+    "converter",
+    "jsx",
+    "tsx",
+    "transformation",
+    "icon"
+  ],
+  "tags": [
+    "svg",
+    "react",
+    "component"
   ],
   "activationEvents": [
     "workspaceContains:**/*.svg"
@@ -47,5 +86,7 @@
     "webpack-cli": "^5.1.4",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "preview": false,
+  "license": "MIT"
 }
