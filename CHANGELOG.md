@@ -8,7 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Not Released]
 
 
-## [1.0.0] - 2023-11-15
+## [1.0.1] - 2024-10-13
 
 ### Added
 - Extension documentation improvements
