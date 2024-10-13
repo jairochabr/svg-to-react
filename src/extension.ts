@@ -87,7 +87,7 @@ function createReactComponent(svgContent: string, filePath: string): string {
     const isTypeScript = filePath.endsWith(TSX_EXTENSION);
 
     const propsType = isTypeScript ? ': React.SVGProps<SVGSVGElement>' : '';
-    const importStatement = isTypeScript ? 'import * as React from "react";\n\n' : '';
+    const importStatement = isTypeScript ? 'import * as React from "react";\n\n' : 'import * as React from "react";\n\n';
 
     return `${importStatement}const ${componentName} = (props${propsType}) => {
   return (
