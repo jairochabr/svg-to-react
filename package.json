@@ -2,7 +2,7 @@
   "name": "svg-to-react",
   "displayName": "Svg to React",
   "description": "Convert SVG files into React JS components with a simple file rename.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "./media/svg-to-react.png",
   "publisher": "jairochabr",
   "author": {
