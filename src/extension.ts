@@ -57,7 +57,6 @@ async function convertSvgToReact(oldUri: vscode.Uri, newUri: vscode.Uri): Promis
         await writeFile(oldUri.fsPath, reactComponent);
 
         vscode.window.showInformationMessage(`File ${getComponentName(newUri.fsPath) + '.svg'} converted to a React component`);
-        // vscode.window.showInformationMessage(`Arquivo convertido para componente React: ${newUri.fsPath}`);
     } catch (error) {
         handleConversionError(error);
     }
@@ -87,7 +86,9 @@ function createReactComponent(svgContent: string, filePath: string): string {
     const isTypeScript = filePath.endsWith(TSX_EXTENSION);
 
     const propsType = isTypeScript ? ': React.SVGProps<SVGSVGElement>' : '';
-    const importStatement = isTypeScript ? 'import * as React from "react";\n\n' : 'import * as React from "react";\n\n';
+    const importStatement = isTypeScript 
+    ? 'import * as React from "react";\n\n' 
+    : 'import * as React from "react";\n\n';
 
     return `${importStatement}const ${componentName} = (props${propsType}) => {
   return (
@@ -197,7 +198,7 @@ function convertStyleAttribute(styleValue: string): string {
  * @returns A string em camelCase
  */
 function toCamelCase(str: string): string {
-    return str.replace(KEBAB_CASE_REGEX, (_: string, letter: string) => letter.toUpperCase());
+    return str.replace(KEBAB_CASE_REGEX, (_, letter: string) => letter.toUpperCase());
 }
 
 /**
