@@ -53,7 +53,6 @@ For TypeScript (`.tsx`), the component will include auto-typing!
 - 🧩 Create reusable Svg components easily
 - 🎛️ Maintain full control over your SVGs in React
 - 🛠️ Seamless integration with VSCode
-- 🚫 Say goodbye to NPM generators and packets!
 
 ## Solving problems 🔍
 
@@ -64,7 +63,7 @@ Encountered an issue? Try these quick tips:
 3. Verify you're in a React JS project
 4. Confirm you're using the correct file extension (JSX or TSX)
 
-Still having trouble? Open an issue on our [GitHub repository](https://github.com/jairochabr/svg-to-react/issues). We're here to help!
+Still having trouble? Open an issue in my [GitHub repository](https://github.com/jairochabr/svg-to-react/issues). I'm here to help!
 
 ---
 
@@ -75,10 +74,6 @@ Developed with ❤️ and lots of ☕ by [@jairochabr](https://github.com/jairoc
 [🐛 Report a bug](https://github.com/jairochabr/svg-to-react/issues)
 
 [💡 Suggest Improvements](https://github.com/jairochabr/svg-to-react/issues)
-
-[🩷 GitHub Sponsor](https://github.com/sponsors/jairochabr)
-
-
 
 
 
