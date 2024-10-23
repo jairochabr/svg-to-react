@@ -9,6 +9,7 @@ const TSX_EXTENSION = ".tsx";
 // Expressões regulares compiladas para melhor performance
 const KEBAB_CASE_REGEX = /-([a-z])/g;
 const ATTRIBUTE_REGEX = /([a-zA-Z0-9-_:]+)[:=]["']([^"']*)["']/g;
+const ARIA_REGEX = /^aria-/;
 
 /**
  * Ativa a extensão
@@ -74,9 +75,9 @@ async function convertSvgToReact(oldUri: vscode.Uri, newUri: vscode.Uri): Promis
     const reactComponent = createReactComponent(svgContent, newUri.fsPath);
     await writeFile(oldUri.fsPath, reactComponent);
     vscode.window.showInformationMessage(
-      `Successfully converted ${getComponentName(
+      `File ${getComponentName(
         newUri.fsPath
-      )}.svg to React component`
+      )}.svg converted to a React component`
     );
   } catch (error) {
     handleConversionError(error);
@@ -92,11 +93,11 @@ async function convertSvgToReact(oldUri: vscode.Uri, newUri: vscode.Uri): Promis
 function handleConversionError(error: unknown): void {
   if (error instanceof Error) {
     vscode.window.showErrorMessage(
-      `Erro ao converter SVG para React: ${error.message}`
+      `Error converting SVG to React: ${error.message}`
     );
   } else {
     vscode.window.showErrorMessage(
-      "Erro desconhecido ao converter SVG para React"
+      "Unknown error when converting SVG to React"
     );
   }
 }
@@ -203,6 +204,11 @@ function convertSvgToJsx(svg: string): string {
  */
 function convertAttributes(svg: string): string {
   return svg.replace(ATTRIBUTE_REGEX, (_, attr: string, value: string) => {
+     // Preserva apenas atributos aria-*
+     if (ARIA_REGEX.test(attr)) {
+      return `${attr}="${value}"`;
+    }
+
     let camelAttr = toCamelCase(attr);
 
     if (attr === "xlink:href") {
@@ -211,10 +217,6 @@ function convertAttributes(svg: string): string {
 
     if (attr === "xml:space") {
       return `xmlSpace="${value}"`;
-    }
-
-    if (attr === "aria-hidden") {
-      return `aria-hidden="${value}"`;
     }
 
     if (camelAttr === "class") {
